@@ -4,5 +4,8 @@
   --grey: #545454;
 }
 
+@import "../fonts/fonts.css";
+@import "../normalize.css";
 @import "./blocks/header/header.scss";
 @import "./blocks/body/body.scss";
+@import "./blocks/profile/profile.scss";

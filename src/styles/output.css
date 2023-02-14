@@ -45,15 +45,17 @@
   margin: 0;
   position: relative;
 }
-.profile__name::after {
-  content: url("/src/images/edit-btn.svg");
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: -7px;
-  right: 52px;
+.profile__info-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
 }
-.profile__name::after:hover {
+.profile__edit-info {
+  background: url("/src/images/edit-btn.svg") no-repeat;
+  width: 28px;
+  height: 28px;
+}
+.profile__edit-info:hover {
   opacity: 0.6;
   cursor: pointer;
 }
@@ -63,6 +65,15 @@
   color: var(--white);
   padding: 0;
   margin: 0;
+}
+.profile__add-place {
+  background: url("/src/images/add-btn.svg") no-repeat;
+  width: 154px;
+  height: 54px;
+}
+.profile__add-place:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=output.css.map */

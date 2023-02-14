@@ -1,0 +1,67 @@
+.profile {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__column_right {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  &__avatar-wrapper {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 42px;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+  }
+
+  &__edit-info {
+    background: url("/src/images/edit-btn.svg") no-repeat;
+    width: 28px;
+    height: 28px;
+  }
+
+  &__edit-info:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+  }
+
+  &__add-place {
+    background: url("/src/images/add-btn.svg") no-repeat;
+    width: 154px;
+    height: 54px;
+  }
+
+  &__add-place:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+}

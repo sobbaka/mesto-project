@@ -1,3 +1,5 @@
+@import "../fonts/fonts.css";
+@import "../normalize.css";
 :root {
   --black: #000;
   --white: #fff;
@@ -12,6 +14,55 @@
 
 .body {
   background-color: var(--black);
+  font-family: "Inter";
+}
+
+.profile {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile__column_right {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.profile__avatar-wrapper {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  display: flex;
+}
+.profile__name {
+  font-weight: 500;
+  font-size: 42px;
+  color: var(--white);
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.profile__name::after {
+  content: url("/src/images/edit-btn.svg");
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -7px;
+  right: 52px;
+}
+.profile__name::after:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.profile__description {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white);
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=output.css.map */

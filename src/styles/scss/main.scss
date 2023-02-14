@@ -1,0 +1,8 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: #545454;
+}
+
+@import "./blocks/header/header.scss";
+@import "./blocks/body/body.scss";

@@ -1,0 +1,17 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: #545454;
+}
+
+.header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 45px;
+}
+
+.body {
+  background-color: var(--black);
+}
+
+/*# sourceMappingURL=output.css.map */

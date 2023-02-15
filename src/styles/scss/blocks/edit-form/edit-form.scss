@@ -1,0 +1,15 @@
+.edit-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__name {
+    margin-bottom: 30px;
+  }
+}

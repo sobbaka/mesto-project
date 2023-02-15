@@ -4,6 +4,10 @@
   --grey: #545454;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @import "../fonts/fonts.css";
 @import "../normalize.css";
 @import "./blocks/header/header.scss";
@@ -11,3 +15,5 @@
 @import "./blocks/profile/profile.scss";
 @import "./blocks/elements/elements.scss";
 @import "./blocks/element/element.scss";
+@import "./blocks/edit-form/edit-form.scss";
+@import "./blocks/form/form.scss";

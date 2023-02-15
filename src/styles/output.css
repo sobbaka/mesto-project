@@ -6,6 +6,10 @@
   --grey: #545454;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
   max-width: 800px;
   margin: 0 auto;
@@ -15,6 +19,7 @@
 .body {
   background-color: var(--black);
   font-family: "Inter";
+  overflow: hidden;
 }
 
 .profile {
@@ -143,6 +148,64 @@
   text-align: center;
   font-weight: 500;
   display: block;
+}
+
+.edit-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit-form__name {
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 430px;
+  height: 330px;
+  background-color: var(--white);
+  border-radius: 10px;
+  position: relative;
+  padding: 36px;
+}
+.form__title {
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 40px;
+}
+.form__close {
+  background: url("/src/images/close-btn.svg") no-repeat;
+  width: 36px;
+  height: 38px;
+  border: transparent;
+  position: absolute;
+  right: -41px;
+  top: -41px;
+}
+.form__input {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+  width: 100%;
+  height: 27px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.form__submit {
+  color: var(--white);
+  background-color: var(--black);
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 35px;
 }
 
 /*# sourceMappingURL=output.css.map */

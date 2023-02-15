@@ -1,0 +1,69 @@
+.element {
+  width: 282px;
+  height: 361px;
+
+  &__picture {
+    height: 282px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__delete {
+    background: url("/src/images/trash.svg") no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: transparent;
+  }
+
+  &__delete:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &__info {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 10px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  &__name {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__like {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__like-btn {
+    background: url("/src/images/like-neutral.svg") no-repeat;
+    width: 23px;
+    height: 20px;
+    border: transparent;
+  }
+
+  &__like-btn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &__counter {
+    text-align: center;
+    font-weight: 500;
+    display: block;
+  }
+}

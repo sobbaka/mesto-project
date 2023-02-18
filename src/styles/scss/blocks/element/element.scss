@@ -13,7 +13,9 @@
   }
 
   &__image {
-    width: 100%;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__delete {
@@ -40,8 +42,12 @@
     border-radius: 0px 0px 10px 10px;
   }
   &__name {
+    max-width: 215px;
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &__like {

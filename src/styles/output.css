@@ -19,7 +19,6 @@
 .body {
   background-color: var(--black);
   font-family: "Inter";
-  overflow: hidden;
 }
 
 .profile {
@@ -87,6 +86,7 @@
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .element {
@@ -103,7 +103,9 @@
   border-radius: 10px 10px 0px 0px;
 }
 .element__image {
-  width: 100%;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
 .element__delete {
   background: url("/src/images/trash.svg") no-repeat;
@@ -127,8 +129,12 @@
   border-radius: 0px 0px 10px 10px;
 }
 .element__name {
+  max-width: 215px;
   padding: 0;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .element__like {
   display: flex;
@@ -160,9 +166,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.edit-form__name {
-  margin-bottom: 30px;
 }
 
 .form {

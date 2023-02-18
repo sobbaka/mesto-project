@@ -198,6 +198,9 @@
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
 }
+.form__input:not(:last-child) {
+  margin-bottom: 30px;
+}
 .form__submit {
   color: var(--white);
   background-color: var(--black);
@@ -206,6 +209,16 @@
   width: 100%;
   padding: 15px 0;
   margin-top: 35px;
+}
+.form_state_hidden {
+  display: none;
+}
+
+.avatar-form {
+  height: 283px;
+}
+.avatar-form__input {
+  margin-bottom: 13px;
 }
 
 /*# sourceMappingURL=output.css.map */

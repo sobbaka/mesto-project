@@ -52,13 +52,29 @@
   </main>
 
   <div class="edit-form">
-    <form action="#" class="edit-form__form form">
+    <form action="#" class="edit-form form form_state_hidden">
       <h4 class="form__title">Редактировать профиль</h4>
       <button class="form__close close" type="button"></button>
       <input type="text" name="name" id="name" class="edit-form__name form__input" placeholder="Жак-Ив Кусто">
       <input type="text" name="description" id="description" class="edit-form__description form__input"
         placeholder="Жак-Ив Кусто">
       <button type="submit" class="edit-form__submit form__submit">Сохранить</button>
+    </form>
+    <form action="#" class="place-form form form_state_hidden">
+      <h4 class="form__title">Новое место</h4>
+      <button class="form__close close" type="button"></button>
+      <input type="text" name="place-form__name" id="place-form__name" class="place-form__input form__input"
+        placeholder="Название">
+      <input type="text" name="place-form__description" id="place-form__description"
+        class="place-form__input form__input" placeholder="Ссылка на картинку">
+      <button type="submit" class="place-form__submit form__submit">Сохранить</button>
+    </form>
+    <form action="#" class="avatar-form form">
+      <h4 class="form__title">Редактировать фото</h4>
+      <button class="form__close close" type="button"></button>
+      <input type="text" name="avatar-form__name" id="name" class="avatar-form__input form__input"
+        placeholder="Название">
+      <button type="submit" class="avatar-form__submit form__submit">Сохранить</button>
     </form>
   </div>
 

@@ -18,6 +18,7 @@
     height: 120px;
     overflow: hidden;
     display: flex;
+    position: relative;
   }
 
   &__avatar-wrapper:hover > &__edit-avatar {
@@ -29,8 +30,8 @@
     width: 28px;
     height: 28px;
     position: absolute;
-    top: 30%;
-    left: 31.2%;
+    top: 41%;
+    left: 35.2%;
     display: none;
   }
 

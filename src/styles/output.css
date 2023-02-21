@@ -41,6 +41,18 @@
   overflow: hidden;
   display: flex;
 }
+.profile__avatar-wrapper:hover > .profile__edit-avatar {
+  display: block;
+}
+.profile__edit-avatar {
+  background: url("/src/images/edit-btn.svg") no-repeat;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 30%;
+  left: 31.2%;
+  display: none;
+}
 .profile__name {
   font-weight: 500;
   font-size: 42px;

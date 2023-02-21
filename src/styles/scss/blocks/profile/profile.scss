@@ -20,6 +20,20 @@
     display: flex;
   }
 
+  &__avatar-wrapper:hover > &__edit-avatar {
+    display: block;
+  }
+
+  &__edit-avatar {
+    background: url("/src/images/edit-btn.svg") no-repeat;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 30%;
+    left: 31.2%;
+    display: none;
+  }
+
   &__name {
     font-weight: 500;
     font-size: 42px;

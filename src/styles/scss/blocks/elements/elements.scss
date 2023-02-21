@@ -2,7 +2,7 @@
   max-width: 880px;
   margin: 0 auto;
   padding-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 17px;
 }

@@ -40,6 +40,7 @@
   height: 120px;
   overflow: hidden;
   display: flex;
+  position: relative;
 }
 .profile__avatar-wrapper:hover > .profile__edit-avatar {
   display: block;
@@ -49,8 +50,8 @@
   width: 28px;
   height: 28px;
   position: absolute;
-  top: 30%;
-  left: 31.2%;
+  top: 41%;
+  left: 35.2%;
   display: none;
 }
 .profile__name {

@@ -8,6 +8,7 @@ const placeForm = document.querySelector(".place-form");
 const avatarForm = document.querySelector(".avatar-form");
 
 
+
 placeButton.addEventListener("click", (e) => {
   openFormProfile(placeForm);
   wrapper.addEventListener("click", (e)=>{
@@ -28,6 +29,28 @@ profileButton.addEventListener("click", (e) => {
 })
 
 
+profileForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  let name = document.querySelector(".profile__name");
+  let description = document.querySelector(".profile__description");
+
+  name.innerHTML = document.querySelector(".profile-formm__name").value;
+  description.innerHTML = document.querySelector(".profile-form__description").value;
+  formSubmit();
+})
+
+avatarForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  let avatar = document.querySelector(".profile__image");
+  avatar.src = document.querySelector(".avatar-form__input ").value;
+
+  formSubmit();
+
+})
+
+
 
 function openFormProfile(form) {
   wrapper.classList.remove("form_state_hidden");
@@ -41,4 +64,9 @@ function closeForm(e, form) {
     wrapper.classList.add("form_state_hidden");
     form.classList.add("form_state_hidden");
   };
+}
+
+function formSubmit() {
+  wrapper.classList.add("form_state_hidden");
+  this.classList.add("form_state_hidden");
 }

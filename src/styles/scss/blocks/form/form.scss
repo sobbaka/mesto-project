@@ -1,6 +1,6 @@
 .form {
   width: 430px;
-  height: 330px;
+  min-height: 330px;
   background-color: var(--white);
   border-radius: 10px;
   position: relative;
@@ -34,8 +34,21 @@
     border-bottom: 1px solid rgba(0, 0, 0, 1);
   }
 
+  &__input_state_error {
+    border: 1px solid red;
+  }
+
   &__input:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  &__input-error {
+    display: none;
+  }
+
+  &__input-error_state_active {
+    display: block;
+    margin: -24px 0px 20px 0px;
   }
 
   &__submit {

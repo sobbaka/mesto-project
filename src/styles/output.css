@@ -183,7 +183,7 @@
 
 .form {
   width: 430px;
-  height: 330px;
+  min-height: 330px;
   background-color: var(--white);
   border-radius: 10px;
   position: relative;
@@ -214,8 +214,18 @@
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
 }
+.form__input_state_error {
+  border: 1px solid red;
+}
 .form__input:not(:last-child) {
   margin-bottom: 30px;
+}
+.form__input-error {
+  display: none;
+}
+.form__input-error_state_active {
+  display: block;
+  margin: -24px 0px 20px 0px;
 }
 .form__submit {
   color: var(--white);

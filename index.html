@@ -53,33 +53,44 @@
   </main>
 
   <div class="form-wrapper form_state_hidden">
+
     <form action="#" class="profile-form form form_state_hidden">
       <h4 class="form__title">Редактировать профиль</h4>
       <button class="form__close close" type="button"></button>
-      <input type="text" name="name" id="name" class="profile-form__name form__input" placeholder="Жак-Ив Кусто">
-      <input type="text" name="description" id="description" class="profile-form__description form__input"
-        placeholder="Жак-Ив Кусто">
-      <button type="submit" class="edit-form__submit form__submit">Сохранить</button>
+      <input type="text" name="name" id="profile-form__name" class="form__input" placeholder="Жак-Ив Кусто" required
+        minlength="7">
+      <span class='form__input-error' id='profile-form__name-error'></span>
+      <input type="text" name="description" id="profile-form__description" class="form__input"
+        placeholder="Жак-Ив Кусто" required minlength="7">
+      <span class='form__input-error' id='profile-form__description-error'></span>
+      <button type="submit" class="form__submit">Сохранить</button>
     </form>
+
     <form action="#" class="place-form form form_state_hidden">
       <h4 class="form__title">Новое место</h4>
       <button class="form__close close" type="button"></button>
-      <input type="text" name="place-form__name" id="place-form__name" class="place-form__input form__input"
-        placeholder="Название">
-      <input type="text" name="place-form__image" id="place-form__image" class="place-form__input form__input"
-        placeholder="Ссылка на картинку">
+      <input type="text" name="place-form__name" id="place-form__name" class="form__input" placeholder="Название"
+        required minlength="7">
+      <span class='form__input-error' id='place-form__name-error'></span>
+      <input type="text" name="place-form__image" id="place-form__image" class="form__input"
+        placeholder="Ссылка на картинку" required minlength="7">
+      <span class='form__input-error' id='place-form__image-error'></span>
       <button type="submit" class="place-form__submit form__submit">Сохранить</button>
     </form>
+
     <form action="#" class="avatar-form form form_state_hidden">
       <h4 class="form__title">Редактировать фото</h4>
       <button class="form__close close" type="button"></button>
-      <input type="text" name="avatar-form__name" id="name" class="avatar-form__input form__input"
-        placeholder="Название">
+      <input type="text" name="avatar-form__link" id="avatar-form__link" class="form__input" placeholder="Название"
+        required minlength="7">
+      <span class='form__input-error' id='avatar-form__link-error'></span>
       <button type="submit" class="avatar-form__submit form__submit">Сохранить</button>
     </form>
   </div>
   <script type="module" src="./src/scripts/images/images.js"></script>
   <script type="module" src="./src/scripts/main.js"></script>
+  <!-- <script type="module" src="./src/scripts/validation/validation.js"></script> -->
+  <script type="module" src="./src/scripts/validation/validation-two.js"></script>
 </body>
 
 </html>

@@ -31,33 +31,31 @@ profileForm.addEventListener("submit", (e) => {
   e.preventDefault()
   let name = document.querySelector(".profile__name");
   let description = document.querySelector(".profile__description");
-  name.innerHTML = document.querySelector(".profile-form__name").value;
-  description.innerHTML = document.querySelector(".profile-form__description").value;
-  formSubmit();
+  name.innerHTML = document.querySelector("#profile-form__name").value;
+  description.innerHTML = document.querySelector("#profile-form__description").value;
+  clearInputValue(avatarForm);
+  formSubmit(profileForm);
 })
 
 avatarForm.addEventListener("submit", (e) => {
   e.preventDefault()
   let avatar = document.querySelector(".profile__image");
-  avatar.src = document.querySelector(".avatar-form__input ").value;
-  formSubmit();
+  avatar.src = document.querySelector("#avatar-form__link").value;
+  clearInputValue(avatarForm);
+  formSubmit(avatarForm);
 })
 
 
 placeForm.addEventListener("submit", (e) => {
   e.preventDefault()
   let element = document.querySelector('.element').cloneNode(true);
-
-
-
   element.querySelector('.element__name').innerHTML = placeForm.querySelector("#place-form__name").value;
   element.querySelector('.element__image').src = placeForm.querySelector("#place-form__image").value;
   element.querySelector('.element__counter').innerHTML = 0;
   document.querySelector('.elements').appendChild(element);
-
-  formSubmit();
+  clearInputValue(placeForm);
+  formSubmit(placeForm);
 })
-
 
 
 function openFormProfile(form) {
@@ -74,7 +72,14 @@ function closeForm(e, form) {
   };
 }
 
-function formSubmit() {
+function formSubmit(form) {
+  form.classList.add("form_state_hidden");
   wrapper.classList.add("form_state_hidden");
-  this.classList.add("form_state_hidden");
+}
+
+function clearInputValue(form) {
+  const inputList = Array.from(form.querySelectorAll('.form__input'));
+  inputList.forEach((inputElement) => {
+    inputElement.value = "";
+  })
 }

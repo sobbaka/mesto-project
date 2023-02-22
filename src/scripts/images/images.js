@@ -1,5 +1,3 @@
-// import images from './images.json' assert {type: 'json'};
-
 window.addEventListener("DOMContentLoaded", addCards)
 
 function addCards () {
@@ -9,14 +7,9 @@ function addCards () {
 
 
   for (let i = 0; i < images.length; i++) {
-
-    console.log(images[i])
-
     element.querySelector('.element__name').innerHTML = images[i].name;
     element.querySelector('.element__image').src = images[i].link;
     element.querySelector('.element__counter').innerHTML = images[i].like;
-
-
     elements.appendChild(element.cloneNode(true));
   }
 }

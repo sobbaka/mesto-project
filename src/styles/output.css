@@ -16,6 +16,11 @@
   padding-top: 45px;
 }
 
+@media (max-width: 620px) {
+  .header {
+    max-width: 282px;
+  }
+}
 .body {
   background-color: var(--black);
   font-family: "Inter";
@@ -93,6 +98,28 @@
   cursor: pointer;
 }
 
+@media (max-width: 620px) {
+  .profile {
+    max-width: 282px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .profile__column_right {
+    flex-direction: column;
+  }
+  .profile__add-place {
+    background: url("/src/images/edit-btn-mob.svg") no-repeat;
+    width: 286px;
+    height: 55px;
+    border: none;
+  }
+  .profile__avatar-wrapper {
+    margin-bottom: 25px;
+  }
+  .profile__info {
+    margin-bottom: 36px;
+  }
+}
 .elements {
   max-width: 880px;
   margin: 0 auto;
@@ -100,8 +127,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 17px;
+  justify-items: center;
 }
 
+@media (max-width: 891px) {
+  .elements {
+    max-width: 610px;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+  }
+}
+@media (max-width: 620px) {
+  .elements {
+    max-width: 610px;
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+}
 .element {
   width: 282px;
   height: 361px;

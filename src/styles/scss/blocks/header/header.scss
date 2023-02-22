@@ -3,3 +3,9 @@
   margin: 0 auto;
   padding-top: 45px;
 }
+
+@media (max-width: 620px) {
+  .header {
+    max-width: 282px;
+  }
+}

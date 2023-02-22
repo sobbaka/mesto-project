@@ -80,3 +80,30 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 620px) {
+  .profile {
+    max-width: 282px;
+    align-items: center;
+    flex-direction: column;
+
+    &__column_right {
+      flex-direction: column;
+    }
+
+    &__add-place {
+      background: url("/src/images/edit-btn-mob.svg") no-repeat;
+      width: 286px;
+      height: 55px;
+      border: none;
+    }
+
+    &__avatar-wrapper {
+      margin-bottom: 25px;
+    }
+
+    &__info {
+      margin-bottom: 36px;
+    }
+  }
+}

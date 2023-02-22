@@ -5,4 +5,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 17px;
+  justify-items: center;
+}
+
+@media (max-width: 891px) {
+  .elements {
+    max-width: 610px;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+  }
+}
+@media (max-width: 620px) {
+  .elements {
+    max-width: 610px;
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
 }

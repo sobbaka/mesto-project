@@ -276,6 +276,10 @@
   width: 100%;
   padding: 15px 0;
   margin-top: 35px;
+  border: none;
+}
+.form__submit_inactive {
+  background-color: rgba(0, 0, 0, 0.3019607843);
 }
 .form_state_hidden {
   display: none;
@@ -292,7 +296,7 @@
   }
 }
 .avatar-form {
-  height: 283px;
+  min-height: 283px;
 }
 .avatar-form__input {
   margin-bottom: 13px;

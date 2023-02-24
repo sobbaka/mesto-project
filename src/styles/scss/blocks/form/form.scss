@@ -59,6 +59,11 @@
     width: 100%;
     padding: 15px 0;
     margin-top: 35px;
+    border: none;
+  }
+
+  &__submit_inactive {
+    background-color: #0000004d;
   }
 
   &_state_hidden {

@@ -12,8 +12,8 @@ function addCards () {
     element.querySelector('.element__counter').innerHTML = images[i].like;
     elements.appendChild(element.cloneNode(true));
   }
-}
 
+}
 
 let images = [
   {

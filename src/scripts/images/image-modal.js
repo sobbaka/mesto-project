@@ -1,15 +1,11 @@
-
 const addModalListeners = () => {
   const cardList = Array.from(document.querySelectorAll('.element'));
   cardList.forEach((card)=>{
-    console.log(card)
     const image = card.querySelector(".element__image");
-
     image.addEventListener("click", () => {
       fromCardToModal(card);
       openImageModal();
       const modal = document.querySelector(".image-modal");
-
       modal.addEventListener("click", (e) => {
         const wrapperClick = e.target.classList.contains("image-modal");
         const closeClick = e.target.classList.contains("close");

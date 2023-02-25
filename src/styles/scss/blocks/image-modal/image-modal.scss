@@ -1,0 +1,47 @@
+.image-modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_state_hidden {
+    display: none;
+  }
+
+  &__image {
+    max-width: 70vh;
+    max-height: 70vh;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__close {
+    background: url("/src/images/close-btn.svg") no-repeat;
+    width: 36px;
+    height: 38px;
+    border: transparent;
+    position: absolute;
+    right: -41px;
+    top: -41px;
+  }
+
+  &__subtitle {
+    color: var(--white);
+  }
+}
+
+@media (max-width: 440px) {
+  .image-modal {
+    &__close {
+      right: -15px;
+      top: -44px;
+    }
+  }
+}

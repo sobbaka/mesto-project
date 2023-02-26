@@ -160,6 +160,7 @@
   width: auto;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 .element__delete {
   background: url("/src/images/trash.svg") no-repeat;
@@ -244,6 +245,7 @@
   position: absolute;
   right: -41px;
   top: -41px;
+  cursor: pointer;
 }
 .form__input {
   font-weight: 400;
@@ -331,6 +333,7 @@
   position: absolute;
   right: -41px;
   top: -41px;
+  cursor: pointer;
 }
 .image-modal__subtitle {
   color: var(--white);

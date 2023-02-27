@@ -8,11 +8,8 @@ window.onload = (e) =>{
   profileButton.addEventListener("click", openFormProfile);
 
   wrapper.addEventListener("click", closeFormProfile);
-  closeProfileButton.addEventListener("click", closeFormProfile);
 
-
-
-
+  
   function openFormProfile() {
     wrapper.classList.remove("form_state_hidden");
     formProfile.classList.remove("form_state_hidden");

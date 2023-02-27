@@ -1,4 +1,4 @@
-const addModalListeners = () => {
+export const addModalListeners = () => {
   const cardList = Array.from(document.querySelectorAll('.element'));
   cardList.forEach((card)=>{
     const image = card.querySelector(".element__image");

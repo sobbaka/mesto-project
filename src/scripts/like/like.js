@@ -17,7 +17,7 @@ const dislike = (button) => {
   button.classList.remove("element__like-btn_is-active");
 }
 
-const toggleLikeState = (button) => {
+export const toggleLikeState = (button) => {
   if (button.classList.contains("element__like-btn_is-active")) {
     dislike(button);
   } else {

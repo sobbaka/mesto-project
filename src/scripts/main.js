@@ -1,3 +1,7 @@
+import { deleteCard } from "./remove/remove.js";
+import { toggleLikeState } from "./like/like.js";
+import { addModalListeners } from "./images/image-modal.js";
+
 const avatarButton = document.querySelector(".profile__edit-avatar");
 const placeButton = document.querySelector(".profile__add-place");
 const profileButton = document.querySelector(".profile__edit-info");
@@ -52,11 +56,17 @@ placeForm.addEventListener("submit", (e) => {
   element.querySelector('.element__name').innerHTML = placeForm.querySelector("#place-form__name").value;
   element.querySelector('.element__image').src = placeForm.querySelector("#place-form__image").value;
   element.querySelector('.element__counter').innerHTML = 0;
+  element.querySelector('.element__delete').addEventListener('click', () => {
+    deleteCard(element.querySelector('.element__delete'));
+  });
+  element.querySelector('.element__like-btn').addEventListener('click', () => {
+    toggleLikeState(element.querySelector('.element__like-btn'));
+  })
   document.querySelector('.elements').appendChild(element);
   clearInputValue(placeForm);
   formSubmit(placeForm);
+  addModalListeners();
 })
-
 
 function openFormProfile(form) {
   wrapper.classList.remove("form_state_hidden");

@@ -7,7 +7,7 @@ const enableDeleteCard = () => {
   });
 };
 
-const deleteCard = (button) => {
+export const deleteCard = (button) => {
   button.closest(".element").remove();
 };
 

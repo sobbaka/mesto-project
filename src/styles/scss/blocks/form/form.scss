@@ -5,6 +5,21 @@
   border-radius: 10px;
   position: relative;
   padding: 36px;
+  animation: show 0.7s;
+  opacity: 1;
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  &_state_hidden {
+    display: none;
+  }
 
   &__title {
     font-weight: 900;
@@ -65,10 +80,6 @@
 
   &__submit_inactive {
     background-color: #0000004d;
-  }
-
-  &_state_hidden {
-    display: none;
   }
 }
 

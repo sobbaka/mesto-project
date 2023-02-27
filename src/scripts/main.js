@@ -77,14 +77,26 @@ function closeForm(e, form) {
   let wrapperClick = e.target.classList.contains("form-wrapper");
   let closeClick = e.target.classList.contains("close");
   if (wrapperClick || closeClick) {
-    wrapper.classList.add("form_state_hidden");
-    form.classList.add("form_state_hidden");
+    let animate = wrapper.animate(
+      [{opacity:1},{opacity:0}],
+      {duration:500}
+      );
+      animate.addEventListener('finish', () => {
+      wrapper.classList.add("form_state_hidden");
+      form.classList.add("form_state_hidden");
+    })
   };
 }
 
 function formSubmit(form) {
-  form.classList.add("form_state_hidden");
-  wrapper.classList.add("form_state_hidden");
+  let animate = wrapper.animate(
+    [{opacity:1},{opacity:0}],
+    {duration:500}
+    );
+    animate.addEventListener('finish', () => {
+    wrapper.classList.add("form_state_hidden");
+    form.classList.add("form_state_hidden");
+  })
 }
 
 function clearInputValue(form) {

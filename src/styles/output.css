@@ -50,7 +50,7 @@
   display: block;
 }
 .profile__edit-avatar {
-  background: url("../src/images/edit-btn.svg") no-repeat;
+  background: url("../images/edit-btn.svg") no-repeat;
   width: 28px;
   height: 28px;
   position: absolute;
@@ -72,7 +72,7 @@
   column-gap: 18px;
 }
 .profile__edit-info {
-  background: url("../src/images/edit-btn.svg") no-repeat;
+  background: url("../images/edit-btn.svg") no-repeat;
   width: 28px;
   height: 28px;
 }
@@ -88,7 +88,7 @@
   margin: 0;
 }
 .profile__add-place {
-  background: url("../src/images/add-btn.svg") no-repeat;
+  background: url("../images/add-btn.svg") no-repeat;
   width: 154px;
   height: 54px;
 }
@@ -107,7 +107,7 @@
     flex-direction: column;
   }
   .profile__add-place {
-    background: url("../src/images/edit-btn-mob.svg") no-repeat;
+    background: url("../images/edit-btn-mob.svg") no-repeat;
     width: 286px;
     height: 55px;
     border: none;

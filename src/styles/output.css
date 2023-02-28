@@ -50,7 +50,7 @@
   display: block;
 }
 .profile__edit-avatar {
-  background: url("/src/images/edit-btn.svg") no-repeat;
+  background: url("./src/images/edit-btn.svg") no-repeat;
   width: 28px;
   height: 28px;
   position: absolute;
@@ -72,7 +72,7 @@
   column-gap: 18px;
 }
 .profile__edit-info {
-  background: url("/src/images/edit-btn.svg") no-repeat;
+  background: url("./src/images/edit-btn.svg") no-repeat;
   width: 28px;
   height: 28px;
 }
@@ -88,7 +88,7 @@
   margin: 0;
 }
 .profile__add-place {
-  background: url("/src/images/add-btn.svg") no-repeat;
+  background: url("./src/images/add-btn.svg") no-repeat;
   width: 154px;
   height: 54px;
 }
@@ -107,7 +107,7 @@
     flex-direction: column;
   }
   .profile__add-place {
-    background: url("/src/images/edit-btn-mob.svg") no-repeat;
+    background: url("./src/images/edit-btn-mob.svg") no-repeat;
     width: 286px;
     height: 55px;
     border: none;
@@ -163,7 +163,7 @@
   cursor: pointer;
 }
 .element__delete {
-  background: url("/src/images/trash.svg") no-repeat;
+  background: url("./src/images/trash.svg") no-repeat;
   width: 25px;
   height: 25px;
   position: absolute;
@@ -196,13 +196,13 @@
   flex-direction: column;
 }
 .element__like-btn {
-  background: url("/src/images/like-neutral.svg") no-repeat;
+  background: url("./src/images/like-neutral.svg") no-repeat;
   width: 23px;
   height: 20px;
   border: transparent;
 }
 .element__like-btn_is-active {
-  background: url("/src/images/like-active.svg") no-repeat;
+  background: url("./src/images/like-active.svg") no-repeat;
 }
 .element__like-btn:hover {
   opacity: 0.6;
@@ -254,7 +254,7 @@
   padding-bottom: 40px;
 }
 .form__close {
-  background: url("/src/images/close-btn.svg") no-repeat;
+  background: url("./src/images/close-btn.svg") no-repeat;
   width: 36px;
   height: 38px;
   border: transparent;
@@ -344,7 +344,7 @@
   position: relative;
 }
 .image-modal__close {
-  background: url("/src/images/close-btn.svg") no-repeat;
+  background: url("./src/images/close-btn.svg") no-repeat;
   width: 36px;
   height: 38px;
   border: transparent;

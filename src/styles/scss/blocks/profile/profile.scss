@@ -26,7 +26,7 @@
   }
 
   &__edit-avatar {
-    background: url("/src/images/edit-btn.svg") no-repeat;
+    background: url("./src/images/edit-btn.svg") no-repeat;
     width: 28px;
     height: 28px;
     position: absolute;
@@ -51,7 +51,7 @@
   }
 
   &__edit-info {
-    background: url("/src/images/edit-btn.svg") no-repeat;
+    background: url("./src/images/edit-btn.svg") no-repeat;
     width: 28px;
     height: 28px;
   }
@@ -70,7 +70,7 @@
   }
 
   &__add-place {
-    background: url("/src/images/add-btn.svg") no-repeat;
+    background: url("./src/images/add-btn.svg") no-repeat;
     width: 154px;
     height: 54px;
   }
@@ -92,7 +92,7 @@
     }
 
     &__add-place {
-      background: url("/src/images/edit-btn-mob.svg") no-repeat;
+      background: url("./src/images/edit-btn-mob.svg") no-repeat;
       width: 286px;
       height: 55px;
       border: none;

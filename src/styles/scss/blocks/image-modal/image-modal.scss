@@ -19,7 +19,7 @@
   }
 
   &__image {
-    max-width: 70vh;
+    max-width: 50vh;
     max-height: 70vh;
   }
 
@@ -28,7 +28,7 @@
   }
 
   &__close {
-    background: url("./src/images/close-btn.svg") no-repeat;
+    background: url("../images/close-btn.svg") no-repeat;
     width: 36px;
     height: 38px;
     border: transparent;

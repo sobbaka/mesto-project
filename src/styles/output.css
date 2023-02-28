@@ -254,7 +254,7 @@
   padding-bottom: 40px;
 }
 .form__close {
-  background: url("./src/images/close-btn.svg") no-repeat;
+  background: url("../images/close-btn.svg") no-repeat;
   width: 36px;
   height: 38px;
   border: transparent;
@@ -337,14 +337,14 @@
   opacity: 0;
 }
 .image-modal__image {
-  max-width: 70vh;
+  max-width: 50vh;
   max-height: 70vh;
 }
 .image-modal__content {
   position: relative;
 }
 .image-modal__close {
-  background: url("./src/images/close-btn.svg") no-repeat;
+  background: url("../images/close-btn.svg") no-repeat;
   width: 36px;
   height: 38px;
   border: transparent;

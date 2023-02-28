@@ -1,4 +1,4 @@
-const enableLike = () => {
+export const enableLike = () => {
   const likeBtnList = Array.from(document.querySelectorAll('.element__like-btn'));
   likeBtnList.forEach((likeBtn) => {
     likeBtn.addEventListener("click", (e) => {
@@ -25,4 +25,3 @@ export const toggleLikeState = (button) => {
   }
 }
 
-window.addEventListener("DOMContentLoaded", enableLike);

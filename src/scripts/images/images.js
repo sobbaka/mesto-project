@@ -1,6 +1,6 @@
-window.addEventListener("DOMContentLoaded", addCards)
+// window.addEventListener("DOMContentLoaded", addCards)
 
-function addCards () {
+export function addCards () {
   let elements = document.querySelector('.elements');
   let element = elements.querySelector('.element');
   elements.removeChild(element);

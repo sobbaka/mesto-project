@@ -1,6 +1,7 @@
-import { deleteCard } from "./remove/remove.js";
-import { toggleLikeState } from "./like/like.js";
+import { deleteCard, enableDeleteCard } from "./remove/remove.js";
+import { enableLike, toggleLikeState } from "./like/like.js";
 import { addModalListeners } from "./images/image-modal.js";
+import { addCards } from "./images/images.js";
 
 const avatarButton = document.querySelector(".profile__edit-avatar");
 const placeButton = document.querySelector(".profile__add-place");
@@ -105,3 +106,10 @@ function clearInputValue(form) {
     inputElement.value = "";
   })
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  addCards();
+  enableDeleteCard();
+  enableLike();
+  addModalListeners();
+});

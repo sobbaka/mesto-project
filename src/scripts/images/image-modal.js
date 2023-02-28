@@ -29,5 +29,3 @@ const fromCardToModal = (card) => {
   document.querySelector(".image-modal__image").src = card.querySelector(".element__image").src;
   document.querySelector(".image-modal__subtitle").innerHTML = card.querySelector(".element__name").innerHTML;
 }
-
-window.addEventListener("DOMContentLoaded", addModalListeners);

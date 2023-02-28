@@ -20,7 +20,7 @@
   }
 
   &__delete {
-    background: url("./src/images/trash.svg") no-repeat;
+    background: url("../images/trash.svg") no-repeat;
     width: 25px;
     height: 25px;
     position: absolute;
@@ -57,14 +57,14 @@
   }
 
   &__like-btn {
-    background: url("./src/images/like-neutral.svg") no-repeat;
+    background: url("../images/like-neutral.svg") no-repeat;
     width: 23px;
     height: 20px;
     border: transparent;
   }
 
   &__like-btn_is-active {
-    background: url("./src/images/like-active.svg") no-repeat;
+    background: url("../images/like-active.svg") no-repeat;
   }
 
   &__like-btn:hover {

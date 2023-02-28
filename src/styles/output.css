@@ -201,6 +201,9 @@
   height: 20px;
   border: transparent;
 }
+.element__like-btn_is-active {
+  background: url("/src/images/like-active.svg") no-repeat;
+}
 .element__like-btn:hover {
   opacity: 0.6;
   cursor: pointer;
@@ -271,7 +274,7 @@
   border-bottom: 1px solid rgb(0, 0, 0);
 }
 .form__input_state_error {
-  border: 1px solid red;
+  border-bottom: 1px solid red;
 }
 .form__input:not(:last-child) {
   margin-bottom: 30px;
@@ -280,6 +283,7 @@
   display: none;
 }
 .form__input-error_state_active {
+  font-size: 12px;
   display: block;
   margin: -24px 0px 20px 0px;
 }

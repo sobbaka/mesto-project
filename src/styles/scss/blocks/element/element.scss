@@ -63,6 +63,10 @@
     border: transparent;
   }
 
+  &__like-btn_is-active {
+    background: url("/src/images/like-active.svg") no-repeat;
+  }
+
   &__like-btn:hover {
     opacity: 0.6;
     cursor: pointer;

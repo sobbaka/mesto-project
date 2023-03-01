@@ -38,7 +38,7 @@ profileForm.addEventListener("submit", (e) => {
   let description = document.querySelector(".profile__description");
   name.innerHTML = document.querySelector("#profile-form__name").value;
   description.innerHTML = document.querySelector("#profile-form__description").value;
-  clearInputValue(avatarForm);
+  clearInputValue(profileForm);
   formSubmit(profileForm);
 })
 
@@ -73,6 +73,26 @@ function openFormProfile(form) {
   wrapper.classList.remove("form_state_hidden");
   form.classList.remove("form_state_hidden");
 }
+
+
+window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      let animate = wrapper.animate(
+        [{opacity:1},{opacity:0}],
+        {duration:500}
+        );
+        animate.addEventListener('finish', () => {
+        wrapper.classList.add("form_state_hidden");
+        const formsList = Array.from(document.querySelectorAll('.form'));
+        for (const form of formsList) {
+          if (!form.classList.contains("form_state_hidden")) {
+            console.log(form);
+            form.classList.add("form_state_hidden");
+          }
+        }
+      })
+    }
+})
 
 function closeForm(e, form) {
   let wrapperClick = e.target.classList.contains("form-wrapper");

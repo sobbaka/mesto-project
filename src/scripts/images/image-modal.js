@@ -23,6 +23,11 @@ const openImageModal = () => {
 
 const closeImageModal = () => {
   document.querySelector(".image-modal").classList.add("image-modal_state_hidden");
+  setTimeout(removeImage, 550);
+}
+
+const removeImage = () => {
+  document.querySelector(".image-modal__image").src = '#';
 }
 
 const fromCardToModal = (card) => {

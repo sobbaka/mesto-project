@@ -33,9 +33,12 @@
     top: 41%;
     left: 35.2%;
     display: none;
+    border: none;
   }
 
   &__name {
+    max-width: 350px;
+    word-wrap: break-word;
     font-weight: 500;
     font-size: 42px;
     color: var(--white);
@@ -82,9 +85,17 @@
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 890px) {
   .profile {
     padding: 40px 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .profile {
+    &__name {
+      max-width: 240px;
+    }
   }
 }
 
@@ -107,6 +118,7 @@
 
     &__avatar-wrapper {
       margin-bottom: 25px;
+      column-gap: 15px;
     }
 
     &__info {

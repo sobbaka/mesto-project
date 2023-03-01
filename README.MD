@@ -1,5 +1,5 @@
 # Mesto project
-Small web app to share image (like simple instagram).
+Small web app to share images (like simple instagram).
 
 ## Technologies
 - HTML / BEM

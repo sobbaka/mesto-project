@@ -349,7 +349,7 @@
   opacity: 0;
 }
 .image-modal__image {
-  max-width: 50vh;
+  max-width: 90vw;
   max-height: 70vh;
 }
 .image-modal__content {

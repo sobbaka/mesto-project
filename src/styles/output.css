@@ -15,9 +15,15 @@
   padding-top: 45px;
 }
 
+@media (max-width: 890px) {
+  .header {
+    padding: 45px 15px;
+  }
+}
 @media (max-width: 620px) {
   .header {
     max-width: 282px;
+    padding: 45px 0;
   }
 }
 .body {
@@ -73,8 +79,9 @@
 }
 .profile__edit-info {
   background: url("../images/edit-btn.svg") no-repeat;
-  width: 28px;
-  height: 28px;
+  width: 33px;
+  height: 33px;
+  border: none;
 }
 .profile__edit-info:hover {
   opacity: 0.6;
@@ -97,6 +104,11 @@
   cursor: pointer;
 }
 
+@media (max-width: 880px) {
+  .profile {
+    padding: 40px 15px;
+  }
+}
 @media (max-width: 620px) {
   .profile {
     max-width: 282px;

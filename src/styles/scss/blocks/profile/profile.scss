@@ -52,8 +52,9 @@
 
   &__edit-info {
     background: url("../images/edit-btn.svg") no-repeat;
-    width: 28px;
-    height: 28px;
+    width: 33px;
+    height: 33px;
+    border: none;
   }
 
   &__edit-info:hover {
@@ -78,6 +79,12 @@
   &__add-place:hover {
     opacity: 0.6;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 880px) {
+  .profile {
+    padding: 40px 15px;
   }
 }
 

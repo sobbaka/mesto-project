@@ -18,20 +18,6 @@ export const addModalListeners = () => {
 
   window.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
-      // let animate = wrapper.animate(
-      //   [{opacity:1},{opacity:0}],
-      //   {duration:500}
-      //   );
-      //   animate.addEventListener('finish', () => {
-      //   wrapper.classList.add("form_state_hidden");
-      //   const formsList = Array.from(document.querySelectorAll('.form'));
-      //   for (const form of formsList) {
-      //     if (!form.classList.contains("form_state_hidden")) {
-      //       console.log(form);
-      //       form.classList.add("form_state_hidden");
-      //     }
-      //   }
-      // })
       closeImageModal();
     }
 })
